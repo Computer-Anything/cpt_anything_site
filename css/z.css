@@ -41,29 +41,10 @@
   --bs-navbar-toggler-hover-bg: #444;
 }
 
-/* Navbar adjustments for dark theme */
-.dark-theme .navbar {
-  background-color: var(--bs-navbar-bg);
-  color: var(--bs-navbar-color);
-}
-
-.dark-theme .navbar-toggler {
-  background-color: var(--bs-navbar-toggler-bg);
-}
-
-.dark-theme .navbar-toggler:hover {
-  background-color: var(--bs-navbar-toggler-hover-bg);
-}
-
 /* Button adjustments for dark theme */
 .dark-theme .btn-primary {
   background-color: var(--bsSuccess);
   border-color: var(--bsSuccess);
-}
-
-.dark-theme .btn-primary:hover {
-  background-color: var(--bsSuccess);
-  border-color: #3700b3;
 }
 
 .navbar-brand {
@@ -110,7 +91,7 @@
   background: linear-gradient(90deg, #cfcfcf 50%, #5f5f5f 50%);
   position: absolute;
   top: 10px;
-  right: 45px;
+  left: 10px; /* Changed from right to left */
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -124,16 +105,21 @@
   width: 40px;
   height: 30px;
   background-color: var(--bsSuccess);
-  border: none;
+  color: var(--bsSuccess);
+  border: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 5px;
-  border-radius: 5px;
   cursor: pointer;
 }
-
+.navbar-toggler:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: var(--bsSuccess);
+  border: 2px solid var(--bsSuccess);
+}
 .navbar-toggler-icon {
   width: 30px;
   height: 3px;
@@ -183,3 +169,4 @@
     order: -1;
   }
 }
+
