@@ -1,4 +1,3 @@
-
 :root {
 
   /* My Colors */
@@ -14,6 +13,59 @@
 
 }
 
+/* Dark Theme */
+.dark-theme {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --bs-primary: #bb86fc;
+  --bs-secondary: #03dac6;
+  --bs-success: #03dac6;
+  --bs-info: #2196f3;
+  --bs-warning: #fbc02d;
+  --bs-danger: #cf6679;
+  --bs-light: #f5f5f5;
+  --bs-dark: #121212;
+
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+
+  --bs-border-color: #333;
+  --bs-link-color: #bb86fc;
+  --bs-link-hover-color: #3700b3;
+
+  --bs-navbar-bg: #1f1f1f;
+  --bs-navbar-color: #e0e0e0;
+  --bs-navbar-toggler-bg: #333;
+  --bs-navbar-toggler-hover-bg: #444;
+}
+
+/* Navbar adjustments for dark theme */
+.dark-theme .navbar {
+  background-color: var(--bs-navbar-bg);
+  color: var(--bs-navbar-color);
+}
+
+.dark-theme .navbar-toggler {
+  background-color: var(--bs-navbar-toggler-bg);
+}
+
+.dark-theme .navbar-toggler:hover {
+  background-color: var(--bs-navbar-toggler-hover-bg);
+}
+
+/* Button adjustments for dark theme */
+.dark-theme .btn-primary {
+  background-color: var(--bsSuccess);
+  border-color: var(--bsSuccess);
+}
+
+.dark-theme .btn-primary:hover {
+  background-color: var(--bsSuccess);
+  border-color: #3700b3;
+}
+
 .navbar-brand {
   font-family: monospace;
   color: var(--bsSuccess);
@@ -22,7 +74,6 @@
   color: var(--bsSuccess);
 }
 
-
 .contact-info-container {
   display: flex;
   justify-content: space-around;
@@ -30,7 +81,7 @@
 }
 
 .contact-info-link, .contact-info-div {
-  color: blueviolet;
+  color: var(--bsSuccess);
   transition: 325ms;
 }
 .contact-info-div:hover, .contact-info-link:hover {
@@ -51,5 +102,84 @@
   margin-top: 2.5rem;
 }
 
+.theme-toggle-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #cfcfcf 50%, #5f5f5f 50%);
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
 
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
 
+.navbar-toggler {
+  width: 40px;
+  height: 30px;
+  background-color: var(--bsSuccess);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #6c757d; /* Gray lines */
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn {
+  background-color: var(--bsSuccess);
+  color: black;
+  border: 2px solid rgb(99, 99, 99);
+}
+
+.custom-btn:hover {
+  background-color: rgb(99, 99, 99);
+  color: var(--bsSuccess);
+  border: 2px solid var(--bsSuccess);
+  }
+
+#testimonials {
+  color: lightgray;
+  background-color: black;
+}
+
+#testimonials .fst-italic {
+  color: lightgray;
+  background-color: black;
+}
+
+#testimonials .fw-bold {
+  background-color: black;
+}
+
+#contact .cpt-anything-changes h1,
+#contact .cpt-anything-changes {
+  color: white !important;
+}
+
+@media (max-width: 1200px) {
+  .row.gx-5.align-items-center.justify-content-center {
+    flex-direction: column;
+  }
+  .col-xl-5.col-xxl-6.d-none.d-xl-block.text-center {
+    display: block !important;
+    width: 100%;
+    order: -1;
+  }
+}
