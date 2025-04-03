@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="./css/z.css" />
   </head>
 
-
-
   <body class="d-flex flex-column h-100">
 
     <main class="flex-shrink-0">
@@ -25,15 +23,20 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container px-5">
 
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Theme"></button>
           <a class="navbar-brand" href="https://dmurchison.github.io/portfolio_site/#page-top" target="_blank">About the Developer</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
               <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
 
@@ -46,11 +49,11 @@
           <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5 text-center text-xl-start">
-                <h1 class="display-5 fw-bolder text-white mb-2">Computer Anything - All your computer software and hardware needs, in one place.</h1>
+                <h1 class="display-5 fw-bolder text-white mb-2">All your computer software and hardware needs, in one place.</h1>
                 <p class="lead fw-normal text-white-50 mb-4">Build your dream website, application, or personal computer! From software engineering and database management, to custom PC builds, we do it all!</p>
                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                  <a class="btn btn-primary btn-lg px-4 me-sm-3" href="contact.html">Contact Directly for any Questions</a>
-                  <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://dmurchison.github.io/portfolio_site/#page-top" target="_blank">Visit Personal Developer Site</a>
+                  <a class="btn custom-btn btn-lg px-4 me-sm-3" href="#contact">Contact Directly for any Questions</a>
+                  <a class="btn custom-btn btn-lg px-4 me-sm-3" href="https://dmurchison.github.io/portfolio_site/#page-top" target="_blank">Visit Personal Developer Site</a>
                 </div>
               </div>
             </div>
@@ -93,12 +96,56 @@
           </div>
         </div>
 
-        <!-- Contact Section -->
+      <!-- Testimonial section-->
+      <section id="testimonials">
+        <!-- Test1 -->
+        <div class="py-5">
+          <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                  <div class="fs-4 mb-4 fst-italic">"Working with Computer Anything has saved me tons of development time Duncan is an excellent Software Engineer and has the ability to see your vision through with you while still getting things done in a surprisingly quick manner."</div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
+                    <div class="fw-bold">
+                      Tulla Contracting
+                      <span class="fw-bold text-primary mx-1">/</span>
+                      Personal Client of Computer Anything LLC
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Test2 -->
+        <div class="py-5">
+          <div class="container px-5 my-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10 col-xl-7">
+              <div class="text-center">
+                <div class="fs-4 mb-4 fst-italic">"When my computer was broken Duncan came over about 10 minutes before I made my decision to buy a new one, he replaced some pieces inside my motherboard with extra computer parts he had. My computer was up and running in about 45 minutes."</div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
+                  <div class="fw-bold">
+                    Easy East
+                    <span class="fw-bold text-primary mx-1">/</span>
+                    Personal Client of Computer Anything LLC
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="py-5" id="contact">
         <div class="container px-5">
-          <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
-            <div class="text-center mb-5">
-              <h1 class="fw-bolder">Get in touch</h1>
-              <p class="lead fw-normal text-muted mb-0">Theres no time like the present to get started on a new project. We're easy to get in touch with and we'll help you figure it out. Just reach out and let's get started! If you can imagine it, we can build it!</p>
+          <div class="bg-dark rounded-3 py-5 px-4 px-md-5 mb-5">
+            <div class="text-center mb-5 .cpt-anything-changes">
+              <h1 class="cpt-anything-changes">Contact Us</h1>
+              <p class="lead fw-normal text-muted mb-0 cpt-anything-changes">Theres no time like the present to get started on a new project. We're easy to get in touch with and we'll help you figure it out. Just reach out and let's get started! If you can imagine it, we can build it!</p>
             </div>
           </div>
           <!-- Contact cards-->
@@ -125,50 +172,7 @@
               <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                 <i class="bi bi-envelope"></i></div>
                 <div class="h5">Email us</div>
-                <p class="text-muted mb-0"><a href="mailto: cpt.anything@gmail.com"> Click here</a> to email us anytime!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonial section-->
-      <section id="testimonials">
-        <!-- Test1 -->
-        <div class="py-5 bg-light">
-          <div class="container px-5 my-5">
-            <div class="row gx-5 justify-content-center">
-              <div class="col-lg-10 col-xl-7">
-                <div class="text-center">
-                  <div class="fs-4 mb-4 fst-italic">"Working with Computer Anything has saved me tons of development time Duncan is an excellent Software Engineer and has the ability to see your vision through with you while still getting things done in a surprisingly quick manner."</div>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
-                    <div class="fw-bold">
-                      Tulla Contracting
-                      <span class="fw-bold text-primary mx-1">/</span>
-                      Personal Client of Computer Anything LLC
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Test2 -->
-        <div class="py-5 bg-light">
-          <div class="container px-5 my-5">
-          <div class="row gx-5 justify-content-center">
-            <div class="col-lg-10 col-xl-7">
-              <div class="text-center">
-                <div class="fs-4 mb-4 fst-italic">"When my computer was broken Duncan came over about 10 minutes before I made my decision to buy a new one, he replaced some pieces inside my motherboard with extra computer parts he had. My computer was up and running in about 45 minutes."</div>
-                <div class="d-flex align-items-center justify-content-center">
-                  <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
-                  <div class="fw-bold">
-                    Easy East
-                    <span class="fw-bold text-primary mx-1">/</span>
-                    Personal Client of Computer Anything LLC
-                  </div>
-                </div>
+                <p class="text-muted mb-0"><a href="mailto: cpt.anything@gmail.com"> Click here</a> to send an email to cpt.anything@gmail.com</p>
               </div>
             </div>
           </div>
