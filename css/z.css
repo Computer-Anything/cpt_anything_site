@@ -170,3 +170,11 @@
   }
 }
 
+/* Center icons and text in contact cards */
+.row-cols-2 .col,
+.row-cols-lg-4 .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
